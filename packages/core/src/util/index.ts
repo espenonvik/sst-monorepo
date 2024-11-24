@@ -12,7 +12,7 @@ export module Util {
                 body = await lambda(event, context);
                 statusCode = 200;
             } catch (error) {
-                console.error(error);
+                console.error("Got an error here", error);
 
                 statusCode = 500;
                 body = JSON.stringify({
